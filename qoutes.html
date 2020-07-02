@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="css/qoutes.css">
+</head>
+<body>
+
+  <div class="container">
+    <section class="texts">
+      <h4 ><span class="qoute" id="qoute"></span></h4>
+      <p><span class="author" id="author"></span></p>
+    </section>
+    <!-- <section class="developer">
+      <p class="dev_name">@vincent_cupid</p>
+    </section> -->
+  </div>
+
+  <script type="text/javascript">
+    const settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://type.fit/api/quotes",
+      "method": "GET"
+    }
+    $(document).ready(function() {
+    $.ajax(settings).done(function (response) {
+      const data = JSON.parse(response);
+      const filtered = data[Math.floor(Math.random() * 1641)]
+      // $("body").css("background", "url(https://picsum.photos/1920/1080/?grayscale&blur=2)");
+      $("body").css("background", "url(https://source.unsplash.com/random/1920x1080)");
+      document.getElementById("qoute").textContent = `“${filtered.text}”`;
+      document.getElementById("author").textContent = filtered.author;
+      console.log(filtered);
+    });
+    })
+
+  </script>
+</body>
+</html>
