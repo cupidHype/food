@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+header {
+  z-index: 2;
+  .search{
+    color: white !important;
+  }
+  .navbar{
+    padding: .5rem 3rem;
+    background-color: rgb(219, 99, 119);
+    color: white;
+  }
+  position: fixed;
+  width: 100%;
+  opacity: .7;
+  .navbar-nav{
+    margin: 0 auto;
+  }
+  .nav-link {
+    font-weight: bolder;
+    font-size: 2em;
+    color: white !important;
+    margin-right: 1.4em;
+  }
+}
+
+.intro {
+  width: 40%;
+  color: white;
+  margin-left: 3rem;
+  margin: 2;
+  h1{
+    font-weight: bold;
+    font-size: 4em;
+    span{
+      display: block;
+    }
+  }
+  p {
+    font-size: 1.4em;
+  }
+  h1, p {
+    margin-bottom: 2rem;
+  }
+  input[type=button] {
+    background-color: white;
+    border: none;
+    padding: .8em 2.4em;
+    font-size: 1.2em;
+    border-radius: 4em ;
+    color: pink;
+    font-weight: bold;
+  }
+}
+
+.first{
+  position: relative;
+  z-index: 1;
+  padding-top: 10em;
+  height: 80em;
+  background-color: pink;
+  background-image: url('https://wallpaperaccess.com/full/286305.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.best-seller-intro {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  text-align: center;
+  color: white;
+  h1{
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  p{
+    font-size: 1.3rem;
+  }
+}
+
+
+.best-seller {
+  background-color: rgb(223, 109, 128);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  // padding-bottom: 2em;
+  .best-cont {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    .dish_img {
+      width: 10rem;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+    }
+    .best_seller_items{
+      text-align: center;
+      color: white;
+      h1 {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+.second {
+  height: 70em;
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.second-top {
+  display: flex;
+  width: 100%;
+  img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .plate, .plate-intro-cont{
+    width: 50%;
+  }
+  .plate {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  h1, p {
+    margin-bottom: 2rem;
+  }
+  .plate-intro-cont{
+    position: relative;
+    .plate-intro{
+      z-index: 2;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 80%;
+      color: pink;
+      input[type=button] {
+        background-color: pink;
+        border: none;
+        padding: .8em 2.4em;
+        font-size: 1.2em;
+        border-radius: 4em ;
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+  }
+}
+
+.second-bottom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(223, 109, 128);
+  padding-top: 5em;
+  padding-bottom: 5em;
+  color: white;
+  .second-intro{
+    padding-bottom: 4em;
+    text-align: center;
+  }
+  .stat-cont {
+    section{
+      p{
+        padding: 10px;
+      }
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      text-align: center;
+      border: 3px solid white;
+      margin: 0 auto;
+      font-size: 2.1rem;
+    }
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    text-align: center;
+  }
+}
+
+.third {
+  padding: 4em 0;
+  display: flex;
+  .right {
+    width: 50%;
+    .img-cont{
+      margin: 0 auto;
+      width: fit-content;
+    }
+    .img-cont img{
+        width: 25rem;
+        height: 25rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+  }
+  .left{
+    position: relative;
+    color: pink;
+    width: 50%; 
+    h1{
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    p{
+      margin-bottom: 2rem;
+    }
+    .third-intro{
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 60%;
+      
+      color: pink;
+      input[type=button] {
+        background-color: pink;
+        border: none;
+        padding: .8em 2.4em;
+        font-size: 1.2em;
+        border-radius: 4em ;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+

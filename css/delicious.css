@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+header {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  opacity: .7;
+}
+
+header .search {
+  color: white !important;
+}
+
+header .navbar {
+  padding: .5rem 3rem;
+  background-color: #db6377;
+  color: white;
+}
+
+header .navbar-nav {
+  margin: 0 auto;
+}
+
+header .nav-link {
+  font-weight: bolder;
+  font-size: 2em;
+  color: white !important;
+  margin-right: 1.4em;
+}
+
+.intro {
+  width: 40%;
+  color: white;
+  margin-left: 3rem;
+  margin: 2;
+}
+
+.intro h1 {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.intro h1 span {
+  display: block;
+}
+
+.intro p {
+  font-size: 1.4em;
+}
+
+.intro h1, .intro p {
+  margin-bottom: 2rem;
+}
+
+.intro input[type=button] {
+  background-color: white;
+  border: none;
+  padding: .8em 2.4em;
+  font-size: 1.2em;
+  border-radius: 4em;
+  color: pink;
+  font-weight: bold;
+}
+
+.first {
+  position: relative;
+  z-index: 1;
+  padding-top: 10em;
+  height: 80em;
+  background-color: pink;
+  background-image: url("https://wallpaperaccess.com/full/286305.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.best-seller-intro {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 4em;
+  text-align: center;
+  color: white;
+}
+
+.best-seller-intro h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.best-seller-intro p {
+  font-size: 1.3rem;
+}
+
+.best-seller {
+  background-color: #df6d80;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.best-seller .best-cont {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.best-seller .best-cont .dish_img {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.best-seller .best-cont .dish_img img {
+  width: 100%;
+}
+
+.best-seller .best-cont .best_seller_items {
+  text-align: center;
+  color: white;
+}
+
+.best-seller .best-cont .best_seller_items h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.best-seller .best-cont .best_seller_items p {
+  font-size: 1.2rem;
+}
+
+.second {
+  height: 70em;
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.second-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.second-top img {
+  width: 25rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.second-top .plate, .second-top .plate-intro-cont {
+  width: 50%;
+}
+
+.second-top .plate {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.second-top h1, .second-top p {
+  margin-bottom: 2rem;
+}
+
+.second-top .plate-intro-cont {
+  position: relative;
+}
+
+.second-top .plate-intro-cont .plate-intro {
+  z-index: 2;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 80%;
+  color: pink;
+}
+
+.second-top .plate-intro-cont .plate-intro input[type=button] {
+  background-color: pink;
+  border: none;
+  padding: .8em 2.4em;
+  font-size: 1.2em;
+  border-radius: 4em;
+  color: white;
+  font-weight: bold;
+}
+
+.second-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #df6d80;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  color: white;
+}
+
+.second-bottom .second-intro {
+  padding-bottom: 4em;
+  text-align: center;
+}
+
+.second-bottom .stat-cont {
+  margin: 0 auto;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.second-bottom .stat-cont section {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  text-align: center;
+  border: 3px solid white;
+  margin: 0 auto;
+  font-size: 2.1rem;
+}
+
+.second-bottom .stat-cont section p {
+  padding: 10px;
+}
+
+.third {
+  padding: 4em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.third .right {
+  width: 50%;
+}
+
+.third .right .img-cont {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.third .right .img-cont img {
+  width: 25rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.third .left {
+  position: relative;
+  color: pink;
+  width: 50%;
+}
+
+.third .left h1 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.third .left p {
+  margin-bottom: 2rem;
+}
+
+.third .left .third-intro {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  color: pink;
+}
+
+.third .left .third-intro input[type=button] {
+  background-color: pink;
+  border: none;
+  padding: .8em 2.4em;
+  font-size: 1.2em;
+  border-radius: 4em;
+  color: white;
+  font-weight: bold;
+}
+/*# sourceMappingURL=delicious.css.map */
