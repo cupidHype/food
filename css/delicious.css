@@ -4,8 +4,17 @@ body {
   margin: 0;
 }
 
+p {
+  font-size: 1.4em;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
 header {
-  z-index: 2;
+  z-index: 4;
   position: fixed;
   width: 100%;
   opacity: .7;
@@ -48,10 +57,6 @@ header .nav-link {
   display: block;
 }
 
-.intro p {
-  font-size: 1.4em;
-}
-
 .intro h1, .intro p {
   margin-bottom: 2rem;
 }
@@ -67,14 +72,29 @@ header .nav-link {
 }
 
 .first {
+  padding-top: 10em;
   position: relative;
   z-index: 1;
-  padding-top: 10em;
   height: 80em;
   background-color: pink;
   background-image: url("https://wallpaperaccess.com/full/286305.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+.first .curve {
+  margin-top: -1em;
+  position: relative;
+}
+
+.first .mask {
+  margin-top: -10em;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  background-color: pink;
+  width: 100%;
+  opacity: .6;
 }
 
 .best-seller-intro {
@@ -95,7 +115,7 @@ header .nav-link {
 }
 
 .best-seller {
-  background-color: #df6d80;
+  background-color: #fa96a7;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -124,7 +144,7 @@ header .nav-link {
 }
 
 .best-seller .best-cont .best_seller_items h1 {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 2rem;
 }
 
@@ -194,11 +214,15 @@ header .nav-link {
   font-weight: bold;
 }
 
+.second-top .plate-intro-cont .plate-intro h1 {
+  font-weight: bold;
+}
+
 .second-bottom {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #df6d80;
+  background-color: #fa96a7;
   padding-top: 5em;
   padding-bottom: 5em;
   color: white;
@@ -207,6 +231,10 @@ header .nav-link {
 .second-bottom .second-intro {
   padding-bottom: 4em;
   text-align: center;
+}
+
+.second-bottom .second-intro h1 {
+  font-weight: bold;
 }
 
 .second-bottom .stat-cont {
@@ -230,6 +258,7 @@ header .nav-link {
 
 .second-bottom .stat-cont section p {
   padding: 10px;
+  font-size: 1.1em;
 }
 
 .third {
@@ -292,5 +321,187 @@ header .nav-link {
   border-radius: 4em;
   color: white;
   font-weight: bold;
+}
+
+.fourth {
+  position: relative;
+  background-image: url("https://i.ndtvimg.com/i/2015-12/italian_625x350_41450863014.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 45em;
+  z-index: 1;
+}
+
+.fourth .mask {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  background-color: pink;
+  width: 100%;
+  opacity: .6;
+}
+
+.fourth .container {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: white;
+  text-align: center;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  z-index: 3;
+}
+
+.fourth .container h1 {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.fourth .container p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 1.4em;
+  margin-bottom: 2rem;
+}
+
+.fourth .container img {
+  margin: 0 auto;
+  width: 20rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.fifth {
+  color: pink;
+  padding: 10em 0;
+  position: relative;
+  text-align: center;
+}
+
+.fifth h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+
+.fifth p {
+  margin-bottom: 2em;
+}
+
+.fifth .emailForm input[type=email] {
+  background-color: #e2e2e2;
+  height: 3em;
+  width: 25em;
+  border-radius: 50px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border: none;
+  color: #a09e9e;
+  padding-left: 15px;
+  font-size: 1.3em;
+}
+
+.fifth .emailForm input[type=email]:focus, .fifth .emailForm input[type=email]:hover, .fifth .emailForm input[type=email]:active {
+  border: none;
+  outline: none;
+}
+
+.fifth .emailForm input[type=email]::-webkit-input-placeholder {
+  color: #a09e9e;
+}
+
+.fifth .emailForm input[type=email]:-ms-input-placeholder {
+  color: #a09e9e;
+}
+
+.fifth .emailForm input[type=email]::-ms-input-placeholder {
+  color: #a09e9e;
+}
+
+.fifth .emailForm input[type=email]::placeholder {
+  color: #a09e9e;
+}
+
+.fifth .emailForm span {
+  margin-left: -5em;
+}
+
+.fifth .emailForm span input {
+  background-color: pink;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  height: 3em;
+  border-radius: 50px;
+  width: 11em;
+  border: none;
+}
+
+.fifth .emailForm span input:focus, .fifth .emailForm span input:hover, .fifth .emailForm span input:active {
+  border: none;
+  outline: none;
+  -webkit-transition: all .5s;
+  background-color: #dd8f9c;
+}
+
+.fifth .container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sixth {
+  position: relative;
+  background-color: black;
+  color: white;
+  padding-bottom: 10em;
+  height: 20em;
+}
+
+.sixth .container {
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sixth .container h3 {
+  font-size: 2rem;
+}
+
+.sixth .container .right {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+}
+
+.sixth .container .right .about, .sixth .container .right .services {
+  margin-right: 2.5em;
+}
+
+.sixth .container .right p {
+  margin-bottom: .5em;
+}
+
+.sixth .container .left {
+  width: 50%;
+  float: left;
 }
 /*# sourceMappingURL=delicious.css.map */

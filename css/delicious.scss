@@ -5,8 +5,18 @@ body {
   margin: 0;
 }
 
+
+p {
+  font-size: 1.4em;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
 header {
-  z-index: 2;
+  z-index: 4;
   .search{
     color: white !important;
   }
@@ -41,9 +51,6 @@ header {
       display: block;
     }
   }
-  p {
-    font-size: 1.4em;
-  }
   h1, p {
     margin-bottom: 2rem;
   }
@@ -59,9 +66,23 @@ header {
 }
 
 .first{
+  .curve{
+    margin-top: -1em;
+    position: relative;
+  }
+  padding-top: 10em;
+  .mask {
+    margin-top: -10em;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    background-color: pink;
+    width: 100%;
+    opacity: .6;
+  }
   position: relative;
   z-index: 1;
-  padding-top: 10em;
+  // padding-top: 10em;
   height: 80em;
   background-color: pink;
   background-image: url('https://wallpaperaccess.com/full/286305.jpg');
@@ -86,7 +107,7 @@ header {
 
 
 .best-seller {
-  background-color: rgb(223, 109, 128);
+  background-color: rgb(250, 150, 167);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -106,7 +127,7 @@ header {
       text-align: center;
       color: white;
       h1 {
-        font-weight: bold;
+        font-weight: bolder;
         font-size: 2rem;
       }
       p{
@@ -160,6 +181,9 @@ header {
         color: white;
         font-weight: bold;
       }
+      h1{
+        font-weight: bold;
+      }
     }
 
   }
@@ -169,11 +193,14 @@ header {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgb(223, 109, 128);
+  background-color: rgb(250, 150, 167);
   padding-top: 5em;
   padding-bottom: 5em;
   color: white;
   .second-intro{
+    h1{
+      font-weight: bold;
+    }
     padding-bottom: 4em;
     text-align: center;
   }
@@ -181,6 +208,7 @@ header {
     section{
       p{
         padding: 10px;
+        font-size: 1.1em;
       }
       height: 10rem;
       width: 10rem;
@@ -246,6 +274,159 @@ header {
     }
   }
 }
+
+.fourth{
+  position: relative;
+  background-image: url('https://i.ndtvimg.com/i/2015-12/italian_625x350_41450863014.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 45em;
+  z-index: 1;
+  .mask {
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    background-color: pink;
+    width: 100%;
+    opacity: .6;
+  }
+  .container{
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: fit-content;
+    position: absolute;
+    z-index: 3;
+    h1{
+      font-weight: bold;
+      font-size: 4em;
+    }
+    p{
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      font-size: 1.4em;
+      margin-bottom: 2rem;  
+    }
+    img{
+      margin: 0 auto;
+      width: 20rem;
+      height: 20rem;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+    }
+  }
+}
+.fifth {
+  h1{
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 1em;
+  }
+  p{
+    margin-bottom: 2em;
+  }
+  .emailForm{
+    input[type=email]{
+      
+     background-color: rgb(226, 226, 226);
+     height: 3em;
+     width: 25em;
+     border-radius: 50px;
+     border-bottom-right-radius: 0;
+     border-top-right-radius: 0;
+     border: none;
+     color: rgb(160, 158, 158);
+     padding-left: 15px;
+     font-size: 1.3em;
+     &:focus, &:hover, &:active{
+       border: none;
+       outline: none;
+     }
+     &::placeholder{
+       color: rgb(160, 158, 158);
+     }
+   }
+
+   span{
+     input{
+       background-color: pink;
+       color: white;
+       font-weight: bold;
+       font-size: 1.3em;
+        height: 3em;
+        border-radius: 50px;
+        width: 11em;
+        border: none;
+        &:focus, &:hover, &:active{
+          border: none;
+          outline: none;
+          -webkit-transition: all .5s ;
+          background-color: rgb(221, 143, 156);
+        }
+     }
+     margin-left: -5em;
+   }
+
+  }
+  color: pink;
+  padding: 10em 0;
+  position: relative;
+  text-align: center;
+  .container{
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.sixth {
+  position: relative;
+  background-color: black;
+  color: white;
+  .container{
+    right: 0;
+    // padding: 10em 0 10em 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    // position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    // position: absolute;
+    h3{
+      font-size: 2rem;
+    }
+    .right {
+      .about, .services{
+        margin-right: 2.5em;
+      }
+      p{
+        margin-bottom: .5em;
+      }
+      width: fit-content;
+      display: flex;
+      float: right;
+    }
+    .left{
+      width: 50%;
+      float: left;
+    }
+  }
+  padding-bottom: 10em;
+  height: 20em;
+}
+// .curves {
+//   height: 2em;
+// }
 
 
 
