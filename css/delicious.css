@@ -1,16 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
+a {
+  font-family: Montserrat-Medium;
+}
+
 p {
-  font-size: 1.4em;
+  font-size: 1.8em;
+  font-family: Montserrat-Regular;
+}
+
+h1, h2,
+input[type=button] {
+  font-family: Montserrat-Bold;
 }
 
 h1 {
-  font-weight: bold;
-  font-size: 3rem;
+  font-size: 4rem !important;
+}
+
+h3 {
+  font-family: Montserrat-Medium;
+}
+
+input {
+  font-size: 1.3em !important;
 }
 
 header {
@@ -48,11 +79,6 @@ header .nav-link {
   margin: 2;
 }
 
-.intro h1 {
-  font-weight: bold;
-  font-size: 4em;
-}
-
 .intro h1 span {
   display: block;
 }
@@ -65,17 +91,15 @@ header .nav-link {
   background-color: white;
   border: none;
   padding: .8em 2.4em;
-  font-size: 1.2em;
   border-radius: 4em;
   color: pink;
-  font-weight: bold;
 }
 
 .first {
   padding-top: 10em;
   position: relative;
   z-index: 1;
-  height: 80em;
+  height: 100em;
   background-color: pink;
   background-image: url("https://wallpaperaccess.com/full/286305.jpg");
   background-repeat: no-repeat;
@@ -105,20 +129,16 @@ header .nav-link {
   color: white;
 }
 
-.best-seller-intro h1 {
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-.best-seller-intro p {
-  font-size: 1.3rem;
-}
-
 .best-seller {
   background-color: #fa96a7;
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.best-seller svg {
+  width: 100%;
+  z-index: -1;
 }
 
 .best-seller .best-cont {
@@ -141,15 +161,6 @@ header .nav-link {
 .best-seller .best-cont .best_seller_items {
   text-align: center;
   color: white;
-}
-
-.best-seller .best-cont .best_seller_items h1 {
-  font-weight: bolder;
-  font-size: 2rem;
-}
-
-.best-seller .best-cont .best_seller_items p {
-  font-size: 1.2rem;
 }
 
 .second {
@@ -208,14 +219,12 @@ header .nav-link {
   background-color: pink;
   border: none;
   padding: .8em 2.4em;
-  font-size: 1.2em;
   border-radius: 4em;
   color: white;
-  font-weight: bold;
 }
 
-.second-top .plate-intro-cont .plate-intro h1 {
-  font-weight: bold;
+.second-top .plate-intro-cont .plate-intro h2 {
+  font-size: 3em;
 }
 
 .second-bottom {
@@ -231,10 +240,6 @@ header .nav-link {
 .second-bottom .second-intro {
   padding-bottom: 4em;
   text-align: center;
-}
-
-.second-bottom .second-intro h1 {
-  font-weight: bold;
 }
 
 .second-bottom .stat-cont {
@@ -253,12 +258,12 @@ header .nav-link {
   text-align: center;
   border: 3px solid white;
   margin: 0 auto;
-  font-size: 2.1rem;
 }
 
 .second-bottom .stat-cont section p {
+  font-family: Montserrat-Bold;
   padding: 10px;
-  font-size: 1.1em;
+  font-size: 2.2em;
 }
 
 .third {
@@ -294,7 +299,6 @@ header .nav-link {
 }
 
 .third .left h1 {
-  font-weight: bold;
   margin-bottom: 2rem;
 }
 
@@ -317,10 +321,8 @@ header .nav-link {
   background-color: pink;
   border: none;
   padding: .8em 2.4em;
-  font-size: 1.2em;
   border-radius: 4em;
   color: white;
-  font-weight: bold;
 }
 
 .fourth {
@@ -358,16 +360,10 @@ header .nav-link {
   z-index: 3;
 }
 
-.fourth .container h1 {
-  font-weight: bold;
-  font-size: 4em;
-}
-
 .fourth .container p {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  font-size: 1.4em;
   margin-bottom: 2rem;
 }
 
@@ -389,8 +385,6 @@ header .nav-link {
 }
 
 .fifth h1 {
-  font-weight: bold;
-  font-size: 3rem;
   margin-bottom: 1em;
 }
 
@@ -408,7 +402,6 @@ header .nav-link {
   border: none;
   color: #a09e9e;
   padding-left: 15px;
-  font-size: 1.3em;
 }
 
 .fifth .emailForm input[type=email]:focus, .fifth .emailForm input[type=email]:hover, .fifth .emailForm input[type=email]:active {
@@ -439,8 +432,6 @@ header .nav-link {
 .fifth .emailForm span input {
   background-color: pink;
   color: white;
-  font-weight: bold;
-  font-size: 1.3em;
   height: 3em;
   border-radius: 50px;
   width: 11em;
@@ -476,10 +467,6 @@ header .nav-link {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-.sixth .container h3 {
-  font-size: 2rem;
 }
 
 .sixth .container .right {
