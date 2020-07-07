@@ -23,7 +23,7 @@ a {
 }
 
 p {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-family: Montserrat-Regular;
 }
 
@@ -33,7 +33,7 @@ input[type=button] {
 }
 
 h1 {
-  font-size: 4rem !important;
+  font-size: 2.9rem !important;
 }
 
 h3 {
@@ -48,7 +48,7 @@ header {
   z-index: 4;
   position: fixed;
   width: 100%;
-  opacity: .7;
+  opacity: .8;
 }
 
 header .search {
@@ -57,7 +57,7 @@ header .search {
 
 header .navbar {
   padding: .5rem 3rem;
-  background-color: #db6377;
+  background-color: #ff7f7f;
   color: white;
 }
 
@@ -72,53 +72,64 @@ header .nav-link {
   margin-right: 1.4em;
 }
 
-.intro {
+.first {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  background-image: url("https://wallpaperaccess.com/full/286305.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.first::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  background-color: #ff7f7f;
+  opacity: .7;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.first .first-top {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-top: 10em;
+}
+
+.first .first-top .intro {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 40%;
   color: white;
   margin-left: 3rem;
   margin: 2;
 }
 
-.intro h1 span {
+.first .first-top .intro h1 span {
   display: block;
 }
 
-.intro h1, .intro p {
+.first .first-top .intro h1, .first .first-top .intro p {
   margin-bottom: 2rem;
 }
 
-.intro input[type=button] {
+.first .first-top .intro input[type=button] {
   background-color: white;
   border: none;
   padding: .8em 2.4em;
   border-radius: 4em;
-  color: pink;
-}
-
-.first {
-  padding-top: 10em;
-  position: relative;
-  z-index: 1;
-  height: 100em;
-  background-color: pink;
-  background-image: url("https://wallpaperaccess.com/full/286305.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  color: #ff7f7f;
 }
 
 .first .curve {
   margin-top: -1em;
   position: relative;
-}
-
-.first .mask {
-  margin-top: -10em;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  background-color: pink;
-  width: 100%;
-  opacity: .6;
 }
 
 .best-seller-intro {
@@ -130,8 +141,10 @@ header .nav-link {
 }
 
 .best-seller {
-  background-color: #fa96a7;
-  position: absolute;
+  padding-top: 10em;
+  height: 100%;
+  background-color: #ff7f7f;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -164,9 +177,18 @@ header .nav-link {
 }
 
 .second {
-  height: 70em;
+  height: fit -webkit-fit-content;
+  height: fit -moz-fit-content;
+  height: fit fit-content;
   position: relative;
   padding-top: 7rem;
+}
+
+.stat-section {
+  height: fit -webkit-fit-content;
+  height: fit -moz-fit-content;
+  height: fit fit-content;
+  position: relative;
   padding-bottom: 7rem;
 }
 
@@ -212,11 +234,11 @@ header .nav-link {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 80%;
-  color: pink;
+  color: #ff7f7f;
 }
 
 .second-top .plate-intro-cont .plate-intro input[type=button] {
-  background-color: pink;
+  background-color: #ff7f7f;
   border: none;
   padding: .8em 2.4em;
   border-radius: 4em;
@@ -228,10 +250,9 @@ header .nav-link {
 }
 
 .second-bottom {
-  position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #fa96a7;
+  background-color: #ff7f7f;
   padding-top: 5em;
   padding-bottom: 5em;
   color: white;
@@ -252,8 +273,9 @@ header .nav-link {
 }
 
 .second-bottom .stat-cont section {
-  height: 10rem;
-  width: 10rem;
+  position: relative;
+  height: 12rem;
+  width: 12rem;
   border-radius: 50%;
   text-align: center;
   border: 3px solid white;
@@ -261,13 +283,20 @@ header .nav-link {
 }
 
 .second-bottom .stat-cont section p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-family: Montserrat-Bold;
-  padding: 10px;
-  font-size: 2.2em;
+  padding: 15px;
+  line-height: 25px;
+  font-size: 2.1em;
+  text-align: center;
 }
 
 .third {
-  padding: 4em 0;
+  padding: 10em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,7 +323,7 @@ header .nav-link {
 
 .third .left {
   position: relative;
-  color: pink;
+  color: #ff7f7f;
   width: 50%;
 }
 
@@ -314,11 +343,11 @@ header .nav-link {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 60%;
-  color: pink;
+  color: #ff7f7f;
 }
 
 .third .left .third-intro input[type=button] {
-  background-color: pink;
+  background-color: #ff7f7f;
   border: none;
   padding: .8em 2.4em;
   border-radius: 4em;
@@ -331,7 +360,7 @@ header .nav-link {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  height: 45em;
+  height: 100vh;
   z-index: 1;
 }
 
@@ -339,7 +368,7 @@ header .nav-link {
   z-index: 2;
   position: absolute;
   height: 100%;
-  background-color: pink;
+  background-color: #ff7f7f;
   width: 100%;
   opacity: .6;
 }
@@ -378,7 +407,7 @@ header .nav-link {
 }
 
 .fifth {
-  color: pink;
+  color: #ff7f7f;
   padding: 10em 0;
   position: relative;
   text-align: center;
@@ -430,7 +459,7 @@ header .nav-link {
 }
 
 .fifth .emailForm span input {
-  background-color: pink;
+  background-color: #ff7f7f;
   color: white;
   height: 3em;
   border-radius: 50px;
@@ -442,7 +471,7 @@ header .nav-link {
   border: none;
   outline: none;
   -webkit-transition: all .5s;
-  background-color: #dd8f9c;
+  background-color: #ff7f7f;
 }
 
 .fifth .container {
@@ -453,13 +482,14 @@ header .nav-link {
 
 .sixth {
   position: relative;
-  background-color: black;
+  background-color: #111111;
   color: white;
   padding-bottom: 10em;
-  height: 20em;
+  height: 100vh;
 }
 
 .sixth .container {
+  width: 100%;
   right: 0;
   left: 0;
   margin-left: auto;
@@ -467,6 +497,7 @@ header .nav-link {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  position: absolute;
 }
 
 .sixth .container .right {
