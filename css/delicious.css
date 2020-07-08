@@ -181,6 +181,12 @@ header .nav-link {
   color: white;
 }
 
+.best-seller .best-cont .best_seller_items p {
+  text-align: center;
+  width: 80%;
+  margin: 2em auto;
+}
+
 .second {
   height: fit -webkit-fit-content;
   height: fit -moz-fit-content;
