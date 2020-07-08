@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: Montserrat-Light;
+  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
   font-family: Montserrat-Regular;
   src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
 }
@@ -19,12 +24,12 @@ body {
 }
 
 a {
-  font-family: Montserrat-Medium;
+  font-family: Montserrat-Light;
 }
 
 p {
   font-size: 1.6em;
-  font-family: Montserrat-Regular;
+  font-family: Montserrat-Light;
 }
 
 h1, h2,
@@ -67,7 +72,7 @@ header .navbar-nav {
 
 header .nav-link {
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1.4em;
   color: white !important;
   margin-right: 1.4em;
 }
@@ -122,7 +127,7 @@ header .nav-link {
 .first .first-top .intro input[type=button] {
   background-color: white;
   border: none;
-  padding: .8em 2.4em;
+  padding: .4em 2.6em;
   border-radius: 4em;
   color: #ff7f7f;
 }
@@ -240,7 +245,7 @@ header .nav-link {
 .second-top .plate-intro-cont .plate-intro input[type=button] {
   background-color: #ff7f7f;
   border: none;
-  padding: .8em 2.4em;
+  padding: .4em 2.6em;
   border-radius: 4em;
   color: white;
 }
@@ -290,7 +295,7 @@ header .nav-link {
           transform: translate(-50%, -50%);
   font-family: Montserrat-Bold;
   padding: 15px;
-  line-height: 25px;
+  line-height: 30px;
   font-size: 2.1em;
   text-align: center;
 }
@@ -349,7 +354,7 @@ header .nav-link {
 .third .left .third-intro input[type=button] {
   background-color: #ff7f7f;
   border: none;
-  padding: .8em 2.4em;
+  padding: .4em 2.6em;
   border-radius: 4em;
   color: white;
 }
@@ -364,13 +369,16 @@ header .nav-link {
   z-index: 1;
 }
 
-.fourth .mask {
-  z-index: 2;
+.fourth::after {
+  z-index: -1;
+  content: '';
   position: absolute;
-  height: 100%;
   background-color: #ff7f7f;
-  width: 100%;
-  opacity: .6;
+  opacity: .7;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
 }
 
 .fourth .container {
@@ -423,7 +431,7 @@ header .nav-link {
 
 .fifth .emailForm input[type=email] {
   background-color: #e2e2e2;
-  height: 3em;
+  padding: .4em 2.6em;
   width: 25em;
   border-radius: 50px;
   border-bottom-right-radius: 0;
@@ -461,7 +469,7 @@ header .nav-link {
 .fifth .emailForm span input {
   background-color: #ff7f7f;
   color: white;
-  height: 3em;
+  padding: .4em 2.6em;
   border-radius: 50px;
   width: 11em;
   border: none;
@@ -481,6 +489,7 @@ header .nav-link {
 }
 
 .sixth {
+  width: 100%;
   position: relative;
   background-color: #111111;
   color: white;
@@ -508,6 +517,7 @@ header .nav-link {
   display: -ms-flexbox;
   display: flex;
   float: right;
+  width: 50%;
 }
 
 .sixth .container .right .about, .sixth .container .right .services {
