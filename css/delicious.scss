@@ -50,6 +50,12 @@ input {
   font-size: 1.3em !important;
 }
 
+.design-icon{
+  position: absolute !important;
+  width: 6em !important;
+  height: auto !important;
+} 
+
 header {
   z-index: 4;
   .search{
@@ -144,6 +150,21 @@ header {
 
 
 .best-seller {
+  .di2 {
+    top: 10em;
+    width: fit-content;
+    right: 5em;
+    -ms-transform: rotate(-30deg); /* IE 9 */
+    transform: rotate(-30deg);
+  }
+  .di1 {
+    width: fit-content;
+    -ms-transform: rotate(40deg); /* IE 9 */
+    transform: rotate(40deg);
+    bottom: 20em;
+    left: 5em;
+  }
+
   padding-top: 10em;
   height: 100%;
   svg{
@@ -188,6 +209,21 @@ header {
   position: relative;
   // padding-top: 7rem;
   padding-bottom: 7rem;
+  .di1 {
+    left: 5em;
+    -ms-transform: rotate(40deg); /* IE 9 */
+    transform: rotate(40deg);
+  }
+  .di2 {
+    right: 5em;
+    top: 2em;
+  }
+  .di3{
+    bottom: 4em;
+    right: 15em;
+    -ms-transform: rotate(-40deg); /* IE 9 */
+    transform: rotate(-40deg);
+  }
 }
 .second-top {
   display: flex;
@@ -278,6 +314,19 @@ header {
 }
 
 .third {
+  position: relative;
+  .di1{
+    left: 8em;
+    top: 2em;
+  }
+  .di2{
+    top: 4em;
+    right: 6em;
+  }
+  .di3 {
+    left: 50em;
+    bottom: 4em;
+  }
   padding: 10em 0;
   display: flex;
   .right {

@@ -49,6 +49,12 @@ input {
   font-size: 1.3em !important;
 }
 
+.design-icon {
+  position: absolute !important;
+  width: 6em !important;
+  height: auto !important;
+}
+
 header {
   z-index: 4;
   position: fixed;
@@ -154,6 +160,28 @@ header .nav-link {
   width: 100%;
 }
 
+.best-seller .di2 {
+  top: 10em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  right: 5em;
+  /* IE 9 */
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.best-seller .di1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  /* IE 9 */
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  bottom: 20em;
+  left: 5em;
+}
+
 .best-seller svg {
   width: 100%;
   z-index: -1;
@@ -201,6 +229,26 @@ header .nav-link {
   height: fit fit-content;
   position: relative;
   padding-bottom: 7rem;
+}
+
+.stat-section .di1 {
+  left: 5em;
+  /* IE 9 */
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.stat-section .di2 {
+  right: 5em;
+  top: 2em;
+}
+
+.stat-section .di3 {
+  bottom: 4em;
+  right: 15em;
+  /* IE 9 */
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
 }
 
 .second-top {
@@ -307,10 +355,26 @@ header .nav-link {
 }
 
 .third {
+  position: relative;
   padding: 10em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.third .di1 {
+  left: 8em;
+  top: 2em;
+}
+
+.third .di2 {
+  top: 4em;
+  right: 6em;
+}
+
+.third .di3 {
+  left: 50em;
+  bottom: 4em;
 }
 
 .third .right {
